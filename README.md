@@ -11,8 +11,4 @@ The basic features of the app are:
 * Gamified content to make the app user-friendly 
 
 # A functional prototype of the app
-You can play around with this functional prototype!
-
-<p align="center">
-<iframe src="https://marvelapp.com/c2b76cg?emb=1" width="330" height="640" frameborder="0" allowtransparency="true"></iframe>
-</p>
+You can play around with the functional prototype found here: [Marvel Function Prototype](https://marvelapp.com/c2b76cg?emb=1)
