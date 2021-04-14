@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:layout_marginBottom="149dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="10dp"
+    android:background="#1A2846"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageButton
+        android:id="@+id/close_friends"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="350dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:drawable/ic_delete" />
+
+    <TextView
+        android:id="@+id/titlefriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="My Friends"
+        android:textColor="#E4E2DD"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="or...my motivating buddies!"
+        android:textColor="#E4E2DD" />
+
+    <ImageButton
+        android:id="@+id/plusnewfriend"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="-55dp"
+        android:background="@layout/roundbutton"
+        android:padding="6dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/plusnew"
+        android:text="Button"
+        tools:clickable="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#1A2846"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/friend1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/friend1" />
+
+                <TextView
+                    android:id="@+id/textView65"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="ThAndJhn"
+                    android:textColor="#E4E2DD"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@android:style/Widget.Material.Light.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="168dp"
+                    android:layout_marginTop="20dp"
+                    android:forceDarkAllowed="true"
+                    android:text="Level 21"
+                    android:textColor="#e3e3fd"
+                    android:textColorLink="?android:attr/textColorHighlightInverse"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Level 21" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="168dp"
+                    android:layout_marginTop="40dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:forceDarkAllowed="false"
+                    android:indeterminate="false"
+                    android:progress="34"
+                    android:scaleY="2"
+                    android:soundEffectsEnabled="false"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:focusable="auto"
+                    tools:soundEffectsEnabled="false"
+                    tools:style="@android:style/Widget.ProgressBar.Horizontal" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="168dp"
+                    android:layout_marginTop="78dp"
+                    android:text="Total points:"
+                    android:textColor="#E4E2DD"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="260dp"
+                    android:layout_marginTop="78dp"
+                    android:text="894.562"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/friend2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/avatarfriend2"
+                    android:layout_width="103dp"
+                    android:layout_height="105dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/friend2" />
+
+                <TextView
+                    android:id="@+id/friend2username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="user18189"
+                    android:textColor="#E4E2DD"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/levelfriend2"
+                    style="@android:style/Widget.Material.Light.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="168dp"
+                    android:layout_marginTop="20dp"
+                    android:forceDarkAllowed="true"
+                    android:text="Level 4"
+                    android:textColor="#e3e3fd"
+                    android:textColorLink="?android:attr/textColorHighlightInverse"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Level 4" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarfriend2"
+                    style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="168dp"
+                    android:layout_marginTop="40dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:forceDarkAllowed="false"
+                    android:indeterminate="false"
+                    android:progress="84"
+                    android:scaleY="2"
+                    android:soundEffectsEnabled="false"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:focusable="auto"
+                    tools:soundEffectsEnabled="false"
+                    tools:style="@android:style/Widget.ProgressBar.Horizontal" />
+
+                <TextView
+                    android:id="@+id/totalfriend2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="168dp"
+                    android:layout_marginTop="78dp"
+                    android:text="Total points:"
+                    android:textColor="#E4E2DD"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/pointsvaluefr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="260dp"
+                    android:layout_marginTop="78dp"
+                    android:text="54.522"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/goals"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_part_002">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/maven_pro"
+        android:text="InstaGoals"
+        android:textColor="#F2EFE8"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/burgermenu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/burgermenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:clickable="true" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="180dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="45dp"
+        android:singleLine="false"
+        android:text="My Goals"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView15"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:textColor="#e4e2dd"
+        android:textSize="32sp"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/button6"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="85dp"
+        android:background="@layout/roundbutton"
+        android:padding="6dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/plusnew"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:clickable="true" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="400dp"
+        android:layout_height="440dp"
+        android:layout_marginTop="150dp"
+        android:clipToPadding="true"
+        android:paddingBottom="0dp"
+        android:scrollbarStyle="outsideOverlay"
+        app:layout_constraintBottom_toTopOf="@+id/include2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <FrameLayout
+                android:id="@+id/frame4"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:background="@layout/goalactive"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="32dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="40dp"
+                    app:srcCompat="@android:drawable/presence_online" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Run 10 km this month"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="315dp"
+                    android:layout_marginTop="75dp"
+                    android:text="Active"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="70dp"
+                    android:text="From:"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="70dp"
+                    android:text="05-03-2021"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Until:"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/date_finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="185dp"
+                    android:layout_marginTop="70dp"
+                    android:text="05-04-2021"
+                    android:textColor="@android:color/white" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="340dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorPrimary"
+                    android:clickable="true"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    app:srcCompat="@android:drawable/ic_menu_edit" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="45dp"
+                    android:text="Progress:"
+                    android:textColor="@color/colorPrimary" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="47dp"
+                    android:forceDarkAllowed="true"
+                    android:progress="50"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    android:theme="@style/AppTheme" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame2"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:background="@layout/goalactive"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/activeimageView"
+                    android:layout_width="32dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="40dp"
+                    app:srcCompat="@android:drawable/presence_online" />
+
+                <TextView
+                    android:id="@+id/titlestudy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Study 20 hours this week"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/activesubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="315dp"
+                    android:layout_marginTop="75dp"
+                    android:text="Active"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/fromsubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="70dp"
+                    android:text="From:"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/fromdate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="70dp"
+                    android:text="05-03-2021"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/untilsubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Until:"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/untildate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="185dp"
+                    android:layout_marginTop="70dp"
+                    android:text="12-03-2021"
+                    android:textColor="@android:color/white" />
+
+                <ImageView
+                    android:id="@+id/editgoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="340dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorPrimary"
+                    android:clickable="true"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    app:srcCompat="@android:drawable/ic_menu_edit" />
+
+                <TextView
+                    android:id="@+id/progresstitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="45dp"
+                    android:text="Progress:"
+                    android:textColor="@color/colorPrimary" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar22"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="47dp"
+                    android:forceDarkAllowed="true"
+                    android:progress="25"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    android:theme="@style/AppTheme" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame1"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:background="@layout/goal_completed"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/doneimage"
+                    android:layout_width="32dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="40dp"
+                    app:srcCompat="@android:drawable/checkbox_on_background" />
+
+                <TextView
+                    android:id="@+id/textcompleted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="302dp"
+                    android:layout_marginTop="75dp"
+                    android:text="Completed"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/studytitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Study 7 hours"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/from22date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="70dp"
+                    android:text="From:"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/fromdate22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="70dp"
+                    android:text="05-03-2021"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/until3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Until:"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/untildate3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="185dp"
+                    android:layout_marginTop="70dp"
+                    android:text="05-03-2021"
+                    android:textColor="@android:color/white" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame3"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                android:background="@layout/goalfailed"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="32dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="40dp"
+                    app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="317dp"
+                    android:layout_marginTop="75dp"
+                    android:text="Failed"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Walk 10 thousand steps"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/from4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="70dp"
+                    android:text="From:"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/fromdate4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="70dp"
+                    android:text="05-03-2021"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/until4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Until:"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/untildate4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="185dp"
+                    android:layout_marginTop="70dp"
+                    android:text="05-03-2021"
+                    android:textColor="@android:color/white" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/mymenu"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="570dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintTop_toBottomOf="parent"
+        tools:layout_marginBottom="0dp" />
+
+</android.support.constraint.ConstraintLayout>

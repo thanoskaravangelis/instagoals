@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="370dp"
+    android:layout_height="550dp"
+    android:layout_marginBottom="149dp"
+    android:layout_marginEnd="21dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="10dp"
+    android:background="#1A2846"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageButton
+        android:id="@+id/button7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="330dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:drawable/ic_delete" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="New Goal"
+        android:textColor="#E4E2DD"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1A2846"
+            android:orientation="vertical"
+            android:padding="10px">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Type"
+                android:textColor="#E4E2DD"
+                android:textSize="22sp" />
+
+            <Spinner
+                android:id="@+id/spinnerforactivity"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:entries="@array/spinnerItems"
+                android:focusableInTouchMode="true"
+                android:layoutMode="clipBounds"
+                android:prompt="@string/spinnertitle"
+                android:textColor="#E4E2DD"
+                tools:clickable="true"
+                tools:focusable="auto" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Title"
+                android:textColor="#E4E2DD"
+                android:textSize="22sp" />
+
+
+            <EditText
+                android:id="@+id/goaltitle"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:ems="10"
+                android:hint="@string/insert_a_title"
+                android:inputType="text"
+                android:text=""
+                android:textColorHint="@android:color/darker_gray" />
+
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Goal"
+                android:textColor="#E4E2DD"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/goalvalue"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:hint="Enter km or hours for studying"
+                android:inputType="number"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Set a deadline"
+                android:textColor="#E4E2DD"
+                android:textSize="22sp" />
+
+            <DatePicker
+                android:id="@+id/dategoal"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/background_light"
+                android:calendarTextColor="@android:color/background_light"
+                android:endYear="2100"
+                android:headerBackground="@color/colorPrimary"
+                android:startYear="2021"
+                android:theme="?android:attr/datePickerDialogTheme"></DatePicker>
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Set deadline time"
+                android:textColor="#E4E2DD"
+                android:textSize="22sp" />
+
+            <TimePicker
+                android:id="@+id/timegoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@color/colorPrimary"
+                android:forceDarkAllowed="true"
+                android:numbersBackgroundColor="@color/colorPrimary"
+                android:numbersSelectorColor="@android:color/holo_orange_dark"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:timePickerMode="spinner"></TimePicker>
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Importance"
+                android:textColor="#E4E2DD"
+                android:textSize="22sp" />
+
+            <SeekBar
+                android:id="@+id/importance"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:forceDarkAllowed="true"
+                android:progress="50"
+                android:theme="@style/Base.Widget.AppCompat.SeekBar.Discrete" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:clickable="true"
+                android:fontFamily="@font/belgrano"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="#E4E2DD"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "186100225459",
+    "firebase_url": "https://hci-instagoals-default-rtdb.firebaseio.com",
+    "project_id": "hci-instagoals",
+    "storage_bucket": "hci-instagoals.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186100225459:android:00327151306abf19f167c6",
+        "android_client_info": {
+          "package_name": "com.instagoals.hci2021.instagoals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186100225459-omdpp3h2sqsoa6obbgp19p7virq8tali.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.instagoals.hci2021.instagoals",
+            "certificate_hash": "10d67fa9f9cb14efd12432b06a6c1fef21650028"
+          }
+        },
+        {
+          "client_id": "186100225459-0ei662ugnt9kn4694s3hmksr8ecabt9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMexlYPQV9RjmFRz2-t8aBwgTismEvNkc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "186100225459-0ei662ugnt9kn4694s3hmksr8ecabt9f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

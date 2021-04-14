@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activities"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_part_004"
+    android:maxHeight="800dp"
+    android:maxWidth="500dp"
+    android:minHeight="100dp"
+    android:minWidth="200dp"
+    android:visibility="visible">
+
+    <ImageButton
+        android:id="@+id/burgermenu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/burgermenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:clickable="true" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/maven_pro"
+        android:text="InstaGoals"
+        android:textColor="#F2EFE8"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/mymenu"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="120dp"
+        android:elevation="0dp"
+        android:paddingBottom="100dp"
+        android:paddingTop="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        tools:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="45dp"
+        android:text="My Activities"
+        android:textColor="#E4E2DD"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <ImageButton
+        android:id="@+id/button6"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="85dp"
+        android:background="@layout/roundbutton"
+        android:padding="6dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/plusnew"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:clickable="true" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="510dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_horizontal|center"
+        android:padding="5dp"
+        android:text="Activity History"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="400dp"
+        android:layout_height="360dp"
+        android:layout_marginBottom="68dp"
+        android:layout_marginTop="150dp"
+        android:background="@layout/borderactivity"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="Right Now"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:singleLine="false"
+            android:text="Running"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="-42dp"
+            app:srcCompat="@drawable/running" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center_horizontal"
+            android:text="16 minutes"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="3.65 km"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:text="Pace:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="165dp"
+            android:layout_marginTop="-24dp"
+            android:text="4'38&quot; / km"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+            android:text="Points Earned:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="165dp"
+            android:layout_marginTop="-24dp"
+            android:text="160 "
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Avg. pulses / min:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="165dp"
+            android:layout_marginTop="-24dp"
+            android:text="105"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="20dp"
+            android:background="@layout/roundpausecorners"
+            android:text="Pause"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="-48.5dp"
+            android:background="@layout/roundpausecorners"
+            android:text="Stop"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>

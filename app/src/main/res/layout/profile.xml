@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_part_005">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/maven_pro"
+        android:text="InstaGoals"
+        android:textColor="#F2EFE8"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/burgermenu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/burgermenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:clickable="true" />
+
+    <TextView
+        android:id="@+id/myprofiletitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:layout_marginEnd="230dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="45dp"
+        android:singleLine="false"
+        android:text="My Profile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#E4E2DD"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <ImageView
+        android:id="@+id/imageButton3"
+        android:layout_width="67dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/include2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView14"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/friends" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@android:style/Widget.Material.Light.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginBottom="103dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="416dp"
+        android:forceDarkAllowed="true"
+        android:text="Level 24"
+        android:textColor="#e3e3fd"
+        android:textColorLink="?android:attr/textColorHighlightInverse"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/include2"
+        app:layout_constraintEnd_toStartOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Level 24" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="84dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="400dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:forceDarkAllowed="false"
+        android:indeterminate="false"
+        android:progress="50"
+        android:scaleY="3"
+        android:soundEffectsEnabled="false"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/include2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:focusable="auto"
+        tools:soundEffectsEnabled="false"
+        tools:style="@android:style/Widget.ProgressBar.Horizontal" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="200dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/avatar"
+        android:cropToPadding="true"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/myavatar" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginStart="151dp"
+        android:fontFamily="@font/bungee_inline"
+        android:text="user18181"
+        android:textAllCaps="false"
+        android:textColor="#F2EFE8"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myprofiletitle" />
+
+
+    <ImageView
+        android:id="@+id/imageButton2"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/include2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/styles" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="67dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginTop="75dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/include2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/leaderboard" />
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/mymenu"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="570dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintTop_toBottomOf="parent"
+        tools:layout_marginBottom="0dp" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginStart="58dp"
+        android:clickable="true"
+        android:text="Customize"
+        android:textColor="#E4E2DD"
+        app:layout_constraintBottom_toTopOf="@+id/include2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginStart="48dp"
+        android:clickable="true"
+        android:text="Friends"
+        android:textColor="#E4E2DD"
+        app:layout_constraintBottom_toTopOf="@+id/include2"
+        app:layout_constraintStart_toEndOf="@+id/textView42"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="58dp"
+        android:clickable="true"
+        android:text="Leaderboard"
+        android:textColor="#E4E2DD"
+        app:layout_constraintBottom_toTopOf="@+id/include2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="10dp"
+        android:text="Total points:"
+        android:textColor="#E4E2DD"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="203dp"
+        android:layout_marginStart="14dp"
+        android:text="1.094.562"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView48"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+</android.support.constraint.ConstraintLayout>
+

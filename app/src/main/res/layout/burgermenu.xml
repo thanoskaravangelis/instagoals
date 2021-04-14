@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/burger"
+    android:layout_width="280dp"
+    android:layout_height="500dp"
+    android:layout_marginBottom="149dp"
+    android:layout_marginLeft="132dp"
+    android:layout_marginTop="16dp"
+    android:background="#1A2846"
+    android:orientation="vertical"
+    android:scaleX="1"
+    android:scaleY="1"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/backtoroot"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="0dp"
+        android:clickable="true"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:src="@drawable/backarrow" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@layout/menubutton"
+        android:text="Settings"
+        android:textColor="#E4E2DD" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@layout/menubutton"
+        android:text="About Us"
+        android:textColor="#E4E2DD" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@layout/menubutton"
+        android:text="Support"
+        android:textColor="#E4E2DD" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@layout/menubutton"
+        android:text="Log out"
+        android:textColor="#E4E2DD" />
+</LinearLayout>
